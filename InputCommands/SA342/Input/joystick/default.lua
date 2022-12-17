@@ -389,8 +389,17 @@ return {
 		{cockpit_device_id = devices.ELECTRIC, down = device_commands.Button_17, up = device_commands.Button_17, value_down = 0, value_up = 1, name = _('Sand Filter Off else On (2-way Switch)'), category = {_('SA342 Start Panel'), _('Custom')}},
 		{cockpit_device_id = devices.ELECTRIC, down = device_commands.Button_17, up = device_commands.Button_17, value_down = 1, value_up = 0, name = _('Sand Filter On else Off (2-way Switch)'), category = {_('SA342 Start Panel'), _('Custom')}},
 		
-		-- Navigation Lights
 
+		-- Navigation Lights
+		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_1, up = device_commands.Button_1, value_down = 1, value_up = 0, name = _('Nav Lights FLASHING else OFF'), category = {_('SA342 Roof Console'), _('Quaggles Custom')}},
+		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_1, up = device_commands.Button_1, value_down = -1, value_up = 0, name = _('Nav Lights STEADY else OFF'), category = {_('SA342 Roof Console'), _('Quaggles Custom')}},
+	        -- Strobe Lights
+		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_2, up = device_commands.Button_2, value_down = 1, value_up = 0, name = _('Strobe Lights NORMAL else OFF'), category = {_('SA342 Roof Console'), _('Quaggles Custom')}},
+		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_2, up = device_commands.Button_2, value_down = -1, value_up = 0, name = _('Strobe Lights ATTENUATED else OFF'), category = {_('SA342 Roof Console'), _('Quaggles Custom')}},
+        	-- Formation Lights
+		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_11, up = device_commands.Button_11, value_down = 1, value_up = 0, name = _('Formation Lights ON else OFF'), category = {_('SA342 Roof Console'), _('Quaggles Custom')}},
+		
+		-- Navigation Lights
 		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_1, value_down = -1, name = _('Nav Lights Steady (Set)'), category = {_('SA342 Main Panel'), _('Custom')}},
 		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_1, value_down = 0, name = _('Nav Lights Off (Set)'), category = {_('SA342 Main Panel'), _('Custom')}},
 		{cockpit_device_id = devices.NAVLIGHTS, down = device_commands.Button_1, value_down = 1, name = _('Nav Lights Flashing (Set)'), category = {_('SA342 Main Panel'), _('Custom')}},
