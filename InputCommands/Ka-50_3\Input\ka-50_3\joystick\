@@ -1,0 +1,10 @@
+return {
+	keyCommands = {
+
+        -- Landing Lights & Voice Warning Panel (Панель управления освещением, переключением каналов АРК и речевым информатором)
+        {down = device_commands.Button_3, up = device_commands.Button_3, cockpit_device_id = devices.SPOTLIGHT_SYSTEM, value_down = 1, value_up = -1, name = _('Light landing search ON else OFF (2-way Switch)'), category = {_('Ins Landing Lights & Voice Warning Panel'), _('Quaggles Custom')}},
+        {down = device_commands.Button_3, up = device_commands.Button_3, cockpit_device_id = devices.SPOTLIGHT_SYSTEM, value_down = -1, value_up = 1, name = _('Light landing search RETRACT else OFF (2-way Switch)'), category = {_('Ins Landing Lights & Voice Warning Panel'), _('Quaggles Custom')}},
+
+        
+	}
+}
