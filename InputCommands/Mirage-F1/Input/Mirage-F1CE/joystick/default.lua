@@ -1,6 +1,15 @@
 return {
 	keyCommands = {
 
+
+		-- Landing light control ARRET-LAND-ROUL
+		{down = devCmds.Cmd310, up = devCmds.Cmd310, cockpit_device_id = devices.MAIN, value_down = 0.0, value_up = 0.5, name = _('Landing light control - OFF else LAND'), category = {_('Left wall'), _('Exterior lighting'), _('Quaggles Custom')}},
+		{down = devCmds.Cmd310, up = devCmds.Cmd310, cockpit_device_id = devices.MAIN, value_down = 1.0, value_up = 0.5, name = _('Landing light control - LAND else TAXI'), category = {_('Left wall'), _('Exterior lighting'), _('Quaggles Custom')}},
+		-- Formation light control
+		{down = devCmds.Cmd311, up = devCmds.Cmd311, cockpit_device_id = devices.MAIN, value_down = 1.0, value_up = 0.5, name = _('Formation light control - BRIGHT else OFF'), category = {_('Right front panel'), _('Exterior lighting'), _('Quaggles Custom')}},
+		-- Navigation light control
+		{down = devCmds.Cmd312, up = devCmds.Cmd312, cockpit_device_id = devices.MAIN, value_down = 1.0, value_up = 0.5, name = _('Navigation light control - BRIGHT else OFF'), category = {_('Right front panel'), _('Exterior lighting'), _('Quaggles Custom')}},
+		
 		-- Navigation indicator
 
 		{cockpit_device_id = devices.MAIN, down = devCmds.Cmd555, value_down = 0, name = _('Mode selector switch - TT'), category = {_('Central front panel'), _('Navigation indicator'), _('Custom')}},
