@@ -39,6 +39,10 @@ return {
 		{cockpit_device_id = devices.MAIN, down = devCmds.Cmd681, value_down = 0.875, name = _('Modes selector - VEI'), category = {_('Right console'), _('Inertial navigation system'), _('Custom')}},
 		{cockpit_device_id = devices.MAIN, down = devCmds.Cmd681, value_down = 0.99, name = _('Modes selector - AR'), category = {_('Right console'), _('Inertial navigation system'), _('Custom')}},
 
+		-- Telemeter/zone scanning switch
+		{down = devCmds.Cmd476, up = devCmds.Cmd476, cockpit_device_id = devices.MAIN, value_down = 1.0, value_up = 0.0, name = _('Telemeter/zone scanning switch - TEL else CENTER'), category = {_('Left wall'), _('Armament system'), _('Quaggles Custom')}},
+		{down = devCmds.Cmd476, up = devCmds.Cmd476, cockpit_device_id = devices.MAIN, value_down = -1.0, value_up = 0.0, name = _('Telemeter/zone scanning switch - BPZ else CENTER'), category = {_('Left wall'), _('Armament system'), _('Quaggles Custom')}},
+		
 -- {down = devCmds.Cmd682, cockpit_device_id = devices.MAIN, value_down = 1.0, name = _('Waypoints selecting wheel - Increase'), category = {_('Central front panel'), _('Inertial navigation system')}},
 -- {down = devCmds.Cmd682, cockpit_device_id = devices.MAIN, value_down = -1.0, name = _('Waypoints selecting wheel - Decrease'), category = {_('Central front panel'), _('Inertial navigation system')}},
 
